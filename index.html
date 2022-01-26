@@ -29,7 +29,7 @@
           <div id="navbar">
             <ul class="nav pull-right">
               <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about-us">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about-us">Reviews and Builds</a></li>
               <li class="nav-item"><a class="nav-link" href="#build-a-guitar">Build a guitar</a></li>
             </ul>
           </div>
@@ -90,7 +90,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active" style="background-image: url('images/5-start-simple-slider.jpg');">
         <div class="carousel-caption">
-          <p class="slider-text-1">"I played for years before i decided to make my own guitar with "Hex".<br>Boy did i strike a win!"</p>
+          <p class="slider-text-1">"I played for years before i decided to make my own guitar with "Hex".<br>Boy did I strike a win!"</p>
           <p class="slider-text-2">Goran Karan<br></p>
         </div>
       </div>
@@ -117,13 +117,12 @@
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <h3 class="h5">Choose the design</h3>
-
-
-
-
-
-
-
+        <form id="form-guitar">
+          <fieldset>
+              <div id="div-guitar"></div> <!-- div for guitar image-->
+          </fieldset>
+          <input type="submit" value="Show">
+        </form> 
       </div>
       <div class="col-md-6 col-sm-12 float-right text-right">
         <h3 class="h5">Address</h3><span>Zvonimirova 102<br/>Croatia</span>
@@ -150,5 +149,9 @@
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/parallax.min.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
+    <script src="scripts/controller/GuitarController.js"></script>
+    <script src="scripts/model/GuitarModel.js"></script>
+    <script src="scripts/view/GuitarView.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
