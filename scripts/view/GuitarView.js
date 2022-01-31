@@ -7,7 +7,7 @@
  * The view holds references to all UI elements with which the user interacts with
  * AND for which the event-handling mechanism needs to be implemented.
  */
-class GuitarView {
+export class GuitarView {
     constructor() {
         this.guitarForm = document.getElementById("form-guitar");
         this.guitarDiv = document.getElementById("div-guitar");
@@ -16,9 +16,14 @@ class GuitarView {
     /**
      * Renders the image based on the model data.
      */
-    renderGuitar(body, color, head) {
+    renderGuitar(o1, o2, o3) {
         //let imgSrc = `./images/sg-mahogony-acdc.png`;
-        let imgSrc = `./images/${body}-${color}-${head}.png`;
-        this.guitarDiv.innerHTML = `<img src='${imgSrc}' alt='guitar'>`;
+        // let imgSrc = `./images/3dmodels/1-1-1.glb`;
+        console.log(o1, o2, o3);
+        let imgSrc = `./images/3dmodels/${o1}-${o2}-${o3}.glb`;
+        //let imgSrc = `./images/${body}-${color}-${head}.png`;
+        this.guitarDiv.innerHTML = `<model-viewer src='${imgSrc}' camera-controls auto-rotate loading="eager" alt='A guitar model'></model-viewer>`;
+        
+        
     }
 }

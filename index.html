@@ -13,6 +13,7 @@
     </noscript>
     <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <noscript>
       <style>
         .tf-header {
@@ -119,7 +120,9 @@
         <h3 class="h5">Choose the design</h3>
         <form id="form-guitar">
           <fieldset>
-              <div id="div-guitar"></div> <!-- div for guitar image-->
+              <div id="div-guitar">
+                
+              </div> <!-- div for guitar image-->
           </fieldset>
           <input type="submit" value="Show">
         </form> 
@@ -149,9 +152,6 @@
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/parallax.min.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
-    <script src="scripts/controller/GuitarController.js"></script>
-    <script src="scripts/model/GuitarModel.js"></script>
-    <script src="scripts/view/GuitarView.js"></script>
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.js" type="module"></script>
   </body>
 </html>

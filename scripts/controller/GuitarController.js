@@ -19,7 +19,7 @@
  * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
  * @author Fran Krsto Hrabric
  */
-class GuitarController {
+export class GuitarController {
 
     constructor(model, view) {
         this.model = model;
@@ -31,7 +31,7 @@ class GuitarController {
     handleFormSubmit = (event) => {
         //prevent the default action of a form (prevent submitting it)
         event.preventDefault();
-        this.view.renderGuitar(this.model.type, this.model.color);
+        this.view.renderGuitar(this.model.body, this.model.color, this.model.head);
     }
 }
 

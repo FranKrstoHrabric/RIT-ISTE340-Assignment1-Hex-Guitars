@@ -5,7 +5,7 @@
  * model does not talk directly to a view, instead is made available to a controller 
  * which accesses it when needed. 
  */
-class GuitarModel{
+ export class GuitarModel{
 
     
     constructor(body, color, head) {
